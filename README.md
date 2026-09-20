@@ -15,20 +15,21 @@ Do not invent client names, testimonials, statistics or public demo URLs.
 
 ## Project screenshots
 
-Drop real screenshots here when they are ready:
+The site uses these files with relative paths so they work on GitHub Pages:
 
 ```text
-assets/quizsphere/cover.jpg
-assets/quizsphere/01.jpg
-assets/quizsphere/02.jpg
-assets/quizsphere/03.jpg
-assets/aurenix/cover.jpg
-assets/aurenix/01.jpg
-assets/aurenix/02.jpg
-assets/aurenix/03.jpg
+assets/quizsphere/quizsphere-dashboard.png
+assets/quizsphere/quizsphere-lobby.png
+assets/quizsphere/quizsphere-question.png
+assets/quizsphere/quizsphere-leaderboard.png
+assets/quizsphere/quizsphere-phone.jpeg
+assets/aurenix/aurenix-dashboard.jpg
+assets/aurenix/aurenix-members.jpg
+assets/aurenix/aurenix-classes.jpg
+assets/aurenix/aurenix-attendance.jpg
 ```
 
-Until those files exist, branded UI frames are shown instead of broken images.
+YouTube demo embeds can replace the View Demo placeholders on the case study pages when the videos are ready.
 
 ## Publish on GitHub Pages
 
