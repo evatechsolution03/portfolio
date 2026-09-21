@@ -29,7 +29,11 @@ assets/aurenix/aurenix-classes.jpg
 assets/aurenix/aurenix-attendance.jpg
 ```
 
-YouTube demo embeds can replace the View Demo placeholders on the case study pages when the videos are ready.
+## Demo videos
+
+The Aurenix case study embeds its YouTube demo (`https://youtu.be/Shx2b9kP1Kc`) in section 08 using the `.video-embed` wrapper.
+
+QuizSphere links out to its Instagram Reel (`https://www.instagram.com/reel/DdgDbtxNNLG/`) from a `.demo-card` in section 08 and from the homepage project card. The Reel is not embedded, so nothing is loaded from Instagram until the visitor clicks.
 
 ## Publish on GitHub Pages
 

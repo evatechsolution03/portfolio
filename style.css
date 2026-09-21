@@ -295,6 +295,24 @@ code {
   transform: translateY(-2px);
 }
 
+.btn-instagram {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus-visible {
+  border-color: rgba(221, 42, 123, 0.55);
+  background: rgba(221, 42, 123, 0.12);
+  transform: translateY(-2px);
+}
+
+.icon-instagram {
+  flex: none;
+  color: #e1306c;
+}
+
 .btn.is-disabled {
   opacity: 0.72;
   cursor: default;
@@ -829,6 +847,10 @@ code {
   margin-bottom: 1.8rem;
 }
 
+.case-hero .project-actions {
+  margin-top: 1rem;
+}
+
 .case-media {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -922,6 +944,42 @@ code {
   margin-bottom: 0.4rem;
 }
 
+.demo-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+  padding: 1.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse at 10% 0%, rgba(221, 42, 123, 0.14), transparent 58%),
+    var(--bg-elevated);
+}
+
+.demo-card-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+}
+
+.demo-card strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.demo-card p {
+  color: var(--text-muted);
+  max-width: 34rem;
+}
+
+.demo-card .btn {
+  margin-top: 0.5rem;
+}
+
 .demo-placeholder {
   display: grid;
   place-items: center;
@@ -953,6 +1011,46 @@ code {
 .demo-placeholder strong {
   font-family: var(--font-display);
   font-size: 1.15rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #05070c;
+  box-shadow: var(--shadow);
+}
+
+@supports not (aspect-ratio: 16 / 9) {
+  .video-embed {
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-fallback {
+  margin-top: 0.75rem;
+}
+
+.video-fallback a {
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+}
+
+.video-fallback a:hover,
+.video-fallback a:focus-visible {
+  text-decoration: underline;
 }
 
 .demo-placeholder p {

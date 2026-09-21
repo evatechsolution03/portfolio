@@ -50,7 +50,10 @@
         <p class="project-category">Yoga &amp; Wellness Studio Management</p>
         <h1>Aurenix</h1>
         <p class="hero-intro">A mobile application developed by Evatech Solutions to bring everyday studio operations into one place.</p>
-        <span class="btn btn-ghost btn-sm is-disabled" role="note">Private Project</span>
+        <div class="project-actions">
+          <a class="btn btn-primary btn-sm" href="#demo">Watch Demo</a>
+          <span class="btn btn-ghost btn-sm is-disabled" role="note">Private Project</span>
+        </div>
       </header>
 
       <div class="container case-media case-media-mobile">
@@ -126,13 +129,19 @@
             </figure>
           </div>
         </section>
-        <section id="demo">
-          <h2>08 — View Demo</h2>
-          <div class="demo-placeholder">
-            <span class="demo-play" aria-hidden="true">▶</span>
-            <strong>View Demo</strong>
-            <p>A YouTube walkthrough of Aurenix will be added here.</p>
+        <section id="demo" aria-labelledby="aurenix-demo-title">
+          <h2 id="aurenix-demo-title">08 — Watch Demo</h2>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/Shx2b9kP1Kc"
+              title="Aurenix demo video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <p class="video-fallback"><a href="https://youtu.be/Shx2b9kP1Kc" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>
         </section>
         <section>
           <h2>09 — Project Outcome</h2>
