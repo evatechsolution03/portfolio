@@ -2,14 +2,20 @@
 
 Agency website for Evatech Solutions — software, websites and custom digital products. Static HTML, CSS and JavaScript. Ready for GitHub Pages.
 
-## Replace placeholders before going live
+## Contact links
 
-Search the project for `[ADD` to find every contact and policy placeholder:
+All contact and social links are plain `href` values in the HTML, so there is no backend:
 
-- Email, WhatsApp, Instagram, LinkedIn, website and Calendly in `index.html`
-- `CONTACT_EMAIL` and `WHATSAPP_NUMBER` at the top of `script.js`
-- Maintenance policy in the FAQ
-- `og:url` in `index.html`
+- WhatsApp: `https://wa.me/919359885640` with the pre-filled message "Hello Evatech Solutions, I would like to discuss a software project."
+- Email: `mailto:hiremahesh.01@gmail.com` with the subject "Project Inquiry — Evatech Solutions"
+- Instagram: `https://www.instagram.com/evatech.agency/`
+- LinkedIn: `https://www.linkedin.com/in/mahesh-hire-626430312/`
+
+`CONTACT_EMAIL` and `ENQUIRY_SUBJECT` at the top of `script.js` drive the enquiry form's mail draft.
+
+## Still to fill in
+
+- `og:url` is set to the GitHub Pages URL; change it if a custom domain is used
 
 Do not invent client names, testimonials, statistics or public demo URLs.
 

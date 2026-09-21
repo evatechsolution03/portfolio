@@ -1,11 +1,10 @@
 /* =========================================================
    Evatech Solutions — site interactions
-   CONTACT: replace the placeholders below before going live.
    ========================================================= */
 
 (function () {
-  const CONTACT_EMAIL = "[ADD EMAIL]";
-  const WHATSAPP_NUMBER = "[ADD WHATSAPP NUMBER]";
+  const CONTACT_EMAIL = "hiremahesh.01@gmail.com";
+  const ENQUIRY_SUBJECT = "Project Inquiry — Evatech Solutions";
 
   const MOBILE_NAV_MAX = 960;
   const header = document.querySelector(".site-header");
@@ -165,7 +164,6 @@
   if (form) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      const emailReady = CONTACT_EMAIL && CONTACT_EMAIL.indexOf("[") === -1;
       const data = new FormData(form);
       const body = [
         "Name: " + (data.get("name") || ""),
@@ -178,30 +176,19 @@
         data.get("description") || ""
       ].join("\n");
 
-      if (!emailReady) {
-        if (formStatus) {
-          formStatus.hidden = false;
-          formStatus.textContent = "Add your email in script.js (CONTACT_EMAIL) and the contact placeholders before this form can send.";
-        }
-        return;
-      }
-
       const mailto =
         "mailto:" +
-        encodeURIComponent(CONTACT_EMAIL) +
+        CONTACT_EMAIL +
         "?subject=" +
-        encodeURIComponent("Project enquiry from " + (data.get("name") || "website")) +
+        encodeURIComponent(ENQUIRY_SUBJECT) +
         "&body=" +
         encodeURIComponent(body);
       window.location.href = mailto;
-    });
-  }
 
-  if (WHATSAPP_NUMBER && WHATSAPP_NUMBER.indexOf("[") === -1) {
-    document.querySelectorAll('a[href="#whatsapp-detail"]').forEach(function (link) {
-      link.href = "https://wa.me/" + WHATSAPP_NUMBER.replace(/[^\d]/g, "");
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
+      if (formStatus) {
+        formStatus.hidden = false;
+        formStatus.textContent = "Opening your email app. If nothing happens, message us on WhatsApp at +91 93598 85640.";
+      }
     });
   }
 })();

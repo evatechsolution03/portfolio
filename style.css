@@ -805,6 +805,16 @@ code {
   text-transform: uppercase;
 }
 
+.contact-details a {
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.contact-details a:hover,
+.contact-details a:focus-visible {
+  color: var(--accent-strong);
+}
+
 .enquiry-form {
   display: grid;
   gap: 0.85rem;
