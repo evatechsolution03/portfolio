@@ -4,14 +4,9 @@ Agency website for Evatech Solutions — software, websites and custom digital p
 
 ## Contact links
 
-All contact and social links are plain `href` values in the HTML, so there is no backend:
+All leads are directed to Instagram. Contact links are plain `href` values in the HTML, so there is no backend and no form:
 
-- WhatsApp: `https://wa.me/919359885640` with the pre-filled message "Hello Evatech Solutions, I would like to discuss a software project."
-- Email: `mailto:hiremahesh.01@gmail.com` with the subject "Project Inquiry — Evatech Solutions"
-- Instagram: `https://www.instagram.com/evatech.agency/`
-- LinkedIn: `https://www.linkedin.com/in/mahesh-hire-626430312/`
-
-`CONTACT_EMAIL` and `ENQUIRY_SUBJECT` at the top of `script.js` drive the enquiry form's mail draft.
+- Instagram: `https://www.instagram.com/evatech.agency/` — every lead CTA and the only social destination
 
 ## Still to fill in
 

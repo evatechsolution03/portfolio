@@ -3,9 +3,6 @@
    ========================================================= */
 
 (function () {
-  const CONTACT_EMAIL = "hiremahesh.01@gmail.com";
-  const ENQUIRY_SUBJECT = "Project Inquiry — Evatech Solutions";
-
   const MOBILE_NAV_MAX = 960;
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".nav-toggle");
@@ -15,8 +12,6 @@
   const sections = document.querySelectorAll("main section[id]");
   const main = document.querySelector("#main");
   const footer = document.querySelector(".site-footer");
-  const form = document.querySelector("#enquiry-form");
-  const formStatus = document.querySelector("#form-status");
 
   yearEls.forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
@@ -129,7 +124,7 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!reduceMotion && "IntersectionObserver" in window) {
     const revealItems = document.querySelectorAll(
-      ".section-header, .project-card, .service-card, .why-grid, .process-grid, .capability-list, .enquiry-form, .case-body"
+      ".section-header, .project-card, .service-card, .why-grid, .process-grid, .capability-list, .case-body"
     );
     const revealObserver = new IntersectionObserver(
       function (entries, currentObserver) {
@@ -159,36 +154,5 @@
 
     window.addEventListener("scroll", revealVisible, { passive: true });
     window.setTimeout(revealVisible, 100);
-  }
-
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const data = new FormData(form);
-      const body = [
-        "Name: " + (data.get("name") || ""),
-        "Business / Company: " + (data.get("company") || ""),
-        "Email: " + (data.get("email") || ""),
-        "Phone / WhatsApp: " + (data.get("phone") || ""),
-        "Project Type: " + (data.get("type") || ""),
-        "Budget Range: " + (data.get("budget") || ""),
-        "",
-        data.get("description") || ""
-      ].join("\n");
-
-      const mailto =
-        "mailto:" +
-        CONTACT_EMAIL +
-        "?subject=" +
-        encodeURIComponent(ENQUIRY_SUBJECT) +
-        "&body=" +
-        encodeURIComponent(body);
-      window.location.href = mailto;
-
-      if (formStatus) {
-        formStatus.hidden = false;
-        formStatus.textContent = "Opening your email app. If nothing happens, message us on WhatsApp at +91 93598 85640.";
-      }
-    });
   }
 })();
